@@ -1,8 +1,14 @@
-body {
-    background-color: #14d39a;
+.header {
 }
-p {
-    color: #702323;
+.header__title {
 }
-h2 {font-size: 50px;}
-/*New comment*/
+.logo {
+}
+.burger {
+}
+.burger__line {
+}
+.h1 {
+}
+.h4 {
+}
