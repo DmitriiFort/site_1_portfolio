@@ -378,7 +378,8 @@ body {
 }
 .text-h2 {
 }
-.section__h2 {
+.question .section__h2 {
+    margin-bottom: 50px;
 }
 .questions__items {
 }
@@ -387,14 +388,43 @@ body {
 .text-h3 {
 }
 .question_h3 {
+    text-transform: uppercase;
+    color:var(--accent-color);
+    margin-bottom: 23px;
 }
 .close {
 }
 .text-p {
 }
 .question_p {
+    margin-bottom: 40px;
+    color: var(--gray-color);
+    min-width: 730px;
 }
-.open {
+.question_h3.close{
+    margin-bottom: 31px;
+}
+.question_h3.open::before,
+.question_h3.close::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/Polygon@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 14px;
+}
+.question_h3.open::before {
+    transform: rotate(-90deg);
+}
+.question_h3.close + .question_p {
+    display: none;
+}
+@media screen  and (max-width:1280px) {
+  .question {
+    padding: 150px 15px 110px;
+  }  
 }
 
 
