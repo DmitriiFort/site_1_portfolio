@@ -10,20 +10,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>-->    
     <link rel="stylesheet" href="css/main.css">
     <title>Test Side</title>
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+      </ul>
+     <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="img/logo.svg" alt="Logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
             <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -88,6 +100,18 @@
             </div>
         </div>
     </section>
+
+  <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Заголовок окна</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ducimus in corrupti. 
+        Consequatur similique est facilis consequuntur, reprehenderit eligendi mollitia odit ad beatae modi ea impedit reiciendis suscipit totam excepturi!</p>
+     </div>
+     <div class="modal-footer">
+       <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>-->
+     </div>
+    </div>
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -96,10 +120,10 @@
                     <h5 class="request__h5">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal1">
                         <img src="img/.svg" alt="Envelope" class="request__icon">
                         Ваш запрос
-                    </button>                 
+                    </a>                 
                 </div>
             </div>
         </div>
@@ -138,28 +162,28 @@
     <section class="portfolio">
         <div class="portfolio__grid">
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="img/Rect4.png" alt="Portfolio Item" >
+                <img class="portfolio__img materialboxed" src="img/Rect4.png" alt="Portfolio Item" >
             </div>
         </div>
     </section>
@@ -315,6 +339,8 @@
         </div>
     </footer>
 
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
